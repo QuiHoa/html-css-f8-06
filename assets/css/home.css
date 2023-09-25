@@ -117,7 +117,7 @@ ul.main-menu a::before {
 
 /* =========================Hero============================= */
 .hero {
-    padding-top: 44px 0px 38px;
+    padding: 44px 0px 38px;
     background: #FBFAFF;
 }
 
@@ -140,12 +140,11 @@ ul.main-menu a::before {
 .hero .box {
     display: flex;
     justify-content: space-between;
-    gap: 165px;
-    align-items: center;
+    gap: 0px 165px;
 }
 
 .hero__content {
-    margin-top: 100px;
+    margin-top: 137px;
 }
 
 .hero__title {

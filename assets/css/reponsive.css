@@ -1,0 +1,173 @@
+.show-on-mobile,
+.show-on-tablet {
+    display: none;
+}
+
+/* PC */
+
+@media screen and (min-width:992px) {}
+
+/* Tablet and Mobile */
+@media screen and (max-width:991.98px) {
+
+    /* Menu ở trên pc */
+    /* ================Header============== */
+    header:not(.header-TB-MB) {
+        display: none;
+    }
+
+    .header-TB-MB {
+        padding: 0px 8px;
+    }
+
+    .header-TB-MB label {
+        display: block;
+    }
+
+    .email-logo .email {
+        display: none;
+    }
+
+    /* Navbars */
+    .menu-overlay {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.3);
+        transition: opacity 0.25s, visibility 0.25s;
+    }
+
+    .menu-drawer {
+        padding: 30px 50px;
+        background-color: #fff;
+        position: fixed;
+        z-index: 2;
+        inset: 0 0 0 45%;
+        transform: translateX(100%);
+        transition: transform 0.25s;
+    }
+
+
+    .header-TB-MB .main-menu {
+        display: block;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .header-TB-MB .main-menu a {
+        display: block;
+        text-align: left;
+        padding: 20px 0px;
+    }
+
+    .header-TB-MB .email {
+        margin-top: 30px;
+        color: #080415;
+        font-size: 2.0rem;
+        font-weight: 500;
+        line-height: 1.36364;
+        text-decoration-line: underline;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    input[type="checkbox"]:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    /* ===============End Header================ */
+    /* ==================Hero================ */
+    .hero {
+        padding-bottom: 0px;
+    }
+
+    .hero .box {
+        gap: 20px 100px;
+    }
+
+    /* ------------Pic------------------- */
+    .hero__pic {
+
+        display: none;
+    }
+
+    /* --------------Content------------- */
+    .hero__content {
+        margin-top: 0px;
+    }
+
+    /* Title */
+    .hero__title {
+        width: min(26rem, 100%);
+        min-height: 10rem;
+        font-size: 4.3rem;
+        line-height: 1.19048;
+    }
+
+    /* Desc */
+    .hero__desc {
+        margin: 20px 0px 30px;
+        font-size: 1.7rem;
+        line-height: 1.625;
+        /* 162.5% */
+
+    }
+
+    /* CTA */
+    .btn {
+        width: 14.7rem;
+        font-size: 1.6rem;
+        line-height: 1.875;
+        padding: 12.5px 0px;
+
+    }
+
+    /* Link */
+    .my-work {
+        font-size: 1.6rem;
+        line-height: 1.875;
+    }
+
+    /* Follow */
+    .hero__follow {
+        margin-top: 25px;
+    }
+
+    .follow__text {
+        font-size: 1.4rem;
+        line-height: 1.42857;
+    }
+
+    .follow__icon {
+        width: 31px;
+        height: 31px;
+    }
+
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:991.98px) {
+
+    .show-on-tablet {
+        display: block;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:767.98px) {
+    .show-on-mobile {
+        display: block;
+    }
+}
